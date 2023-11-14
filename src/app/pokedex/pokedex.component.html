@@ -1,0 +1,11 @@
+<div>
+    <button *ngIf="pokemonId" (click)="searchPrev(+pokemonId - 1)">prev</button>
+    <input type="text" [(ngModel)]="pokemonId" (change)="search(pokemonId)" placeholder="Pokemon Id">
+    <button *ngIf="pokemonId" (click)="searchNext(+pokemonId + 1)">next</button>
+</div>
+<div *ngIf="response">
+    <img src={{img}} alt="">
+    <p>Name: {{response.name[0].toUpperCase()+response.name.slice(1)}}</p>
+</div>
+
+<div class="pokeball"></div>

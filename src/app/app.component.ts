@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { PokedexComponent } from './pokedex/pokedex.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'pet';
+  
+  constructor(private http: HttpClient){
+
+  }
 }

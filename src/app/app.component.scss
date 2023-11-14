@@ -1,0 +1,21 @@
+@font-face {
+    font-family:"PokemonGb";
+    src: url("../fonts/pokemon-gb-font/PokemonGb-RAeo.ttf") format("truetype");
+}
+
+*{
+    font-family: PokemonGb;
+}
+
+img{
+    width: 300px;
+}
+
+input{
+    height: 20px;
+    font-size:small;
+}
+button{
+    height: 20px;
+    font-size:small;
+}

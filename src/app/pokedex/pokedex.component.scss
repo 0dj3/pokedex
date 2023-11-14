@@ -1,0 +1,64 @@
+@font-face {
+    font-family:"PokemonGb";
+    src: url("../../fonts/pokemon-gb-font/PokemonGb-RAeo.ttf") format("truetype");
+}
+
+*{
+    font-family: PokemonGb;
+}
+
+img{
+    width: 300px;
+}
+
+input{
+    height: 20px;
+    font-size:small;
+}
+button{
+    height: 20px;
+    font-size:small;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  .pokeball {
+    display: block;
+    width: 103px;
+    height: 103px;
+    background: radial-gradient(
+        white 8px,
+        black 8.5px 10px,
+        white 8px 12px,
+        black 12.5px 18px,
+        transparent 16.5px
+      ),
+      linear-gradient(to bottom, red 0 40px, black 40.5px 48px, white 48.5px 100%);
+    border-radius: 50%;
+    border: 8px solid black;
+    box-shadow: inset -8px -4px 0 0 rgba(0, 0, 0, 0.2);
+    animation: shake 2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0s infinite,
+  }
+
+@keyframes shake {
+    0% {
+        transform: translateX(0) rotate(0);
+    }
+    20% {
+        transform: translateX(-10px) rotate(-20deg);
+    }
+    30% {
+        transform: translateX(10px) rotate(20deg);
+    }
+    50% {
+        transform: translateX(-10px) rotate(-10deg);
+    }
+    60% {
+        transform: translateX(10px) rotate(10deg);
+    }
+    100% {
+        transform: translateX(0) rotate(0);
+    }
+}
+  
