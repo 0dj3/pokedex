@@ -4,8 +4,9 @@
     <button *ngIf="pokemonId" (click)="searchNext(+pokemonId + 1)">next</button>
 </div>
 <div *ngIf="response">
+    <!-- <div class="pokeball"></div> -->
     <img src={{img}} alt="">
-    <p>Name: {{response.name[0].toUpperCase()+response.name.slice(1)}}</p>
+    <p>Id: {{getId()}}</p>
+    <p>Name: {{getName()}}</p>
+    <p>Type: {{getType()}}</p>
 </div>
-
-<div class="pokeball"></div>
