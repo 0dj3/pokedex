@@ -21,33 +21,46 @@
     border-radius: 10px;
     padding: 15px;
 }
-.search-box{
-    padding: auto;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
 
 .pokedex-img{
+    width: 100%;
     position: relative;
     align-content: center;
-    width: 400px;
+}
+
+.pokedex-img-container{
+    width: 100%;
     border-radius: 10px;
-    border: black solid 4px;
+    border: black solid 2px;
     background-color: white;
 }
 
+.search-container{
+    width: 80%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .search-box{
-    height: 20px;
+    border: black solid 2px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 1px 10px 1px 10px;
     font-size:small;
 }
 .prev-button{
     background-color: rgba($color: #f37070, $alpha: 1);
-    height: 20px;
+    border: black solid 2px;
+    border-radius: 10px;
+    height: 30px;
     font-size:small;
 }
 .next-button{
     background-color: rgba($color: #f37070, $alpha: 1);
-    height: 20px;
+    border: black solid 2px;
+    border-radius: 10px;
+    height: 30px;
     font-size:small;
 }
 
@@ -58,43 +71,24 @@ button{
 
 * {
     box-sizing: border-box;
-  }
-  .pokeball {
-    display: block;
-    width: 103px;
-    height: 103px;
-    background: radial-gradient(
-        white 8px,
-        black 8.5px 10px,
-        white 8px 12px,
-        black 12.5px 18px,
-        transparent 16.5px
-      ),
-      linear-gradient(to bottom, red 0 40px, black 40.5px 48px, white 48.5px 100%);
-    border-radius: 50%;
-    border: 8px solid black;
-    box-shadow: inset -8px -4px 0 0 rgba(0, 0, 0, 0.2);
-    animation: shake 2s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0s infinite,
-  }
-
-@keyframes shake {
-    0% {
-        transform: translateX(0) rotate(0);
-    }
-    20% {
-        transform: translateX(-10px) rotate(-20deg);
-    }
-    30% {
-        transform: translateX(10px) rotate(20deg);
-    }
-    50% {
-        transform: translateX(-10px) rotate(-10deg);
-    }
-    60% {
-        transform: translateX(10px) rotate(10deg);
-    }
-    100% {
-        transform: translateX(0) rotate(0);
-    }
 }
-  
+
+.pokedex-stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    width: 90%;
+    margin: 0 10px 0 10px;
+}
+
+.pokedex-text{
+    font-size: medium;
+    margin-bottom: 0;
+}
+
+.pokedex-species{
+    font-size: small;
+    margin: auto;
+    padding-top: 15px;
+}

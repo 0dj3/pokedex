@@ -6,10 +6,19 @@
         <button class="next-button" (click)="searchNext(+pokemonId + 1)">next</button>
     </div>
     <div class = "info-container" *ngIf="response">
-        <!-- <div class="pokeball"></div> -->
-        <img class="pokedex-img" src={{img}} alt="">
-        <p class="pokedex-text">Id: {{getId()}}</p>
-        <p class="pokedex-text">Name: {{getName()}}</p>
-        <p class="pokedex-text">Type: {{getType()}}</p>
+        <div class="pokedex-img-container">
+            <img class="pokedex-img" src={{img}} alt="">
+        </div>
+        <!-- <p class="pokedex-text">Id: {{getId()}}</p> -->
+        <div class="pokedex-text-container">
+            <p class="pokedex-text">Name: {{getName()}}</p>
+            <p class="pokedex-text">Type: {{getType()}}</p>
+            <p class="pokedex-species">{{getSpecies()}}</p>
+        </div>
+        <div class="pokedex-stats">
+            <p>HP: {{getHp()}}</p>
+            <p>ATK: {{getAttack()}}</p>
+            <p>DEF: {{getDefense()}}</p>
+        </div>
     </div>
 </div>
