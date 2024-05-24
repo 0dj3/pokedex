@@ -7,14 +7,50 @@
     font-family: PokemonGb;
 }
 
-img{
-    width: 300px;
+.pokedex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba($color: #4ea2e671, $alpha: 1);
+    width: 100%;
+    height: 100%;
 }
 
-input{
+.info-container{
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 15px;
+}
+.search-box{
+    padding: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.pokedex-img{
+    position: relative;
+    align-content: center;
+    width: 400px;
+    border-radius: 10px;
+    border: black solid 4px;
+    background-color: white;
+}
+
+.search-box{
     height: 20px;
     font-size:small;
 }
+.prev-button{
+    background-color: rgba($color: #f37070, $alpha: 1);
+    height: 20px;
+    font-size:small;
+}
+.next-button{
+    background-color: rgba($color: #f37070, $alpha: 1);
+    height: 20px;
+    font-size:small;
+}
+
 button{
     height: 20px;
     font-size:small;

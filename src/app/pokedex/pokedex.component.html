@@ -1,12 +1,15 @@
-<div>
-    <button *ngIf="pokemonId" (click)="searchPrev(+pokemonId - 1)">prev</button>
-    <input type="text" [(ngModel)]="pokemonId" (change)="search(pokemonId)" placeholder="Pokemon Id">
-    <button *ngIf="pokemonId" (click)="searchNext(+pokemonId + 1)">next</button>
-</div>
-<div *ngIf="response">
-    <!-- <div class="pokeball"></div> -->
-    <img src={{img}} alt="">
-    <p>Id: {{getId()}}</p>
-    <p>Name: {{getName()}}</p>
-    <p>Type: {{getType()}}</p>
+
+<div class="pokedex-container">
+    <div class="search-container">
+        <button class="prev-button" (click)="searchPrev(+pokemonId - 1)">prev</button>
+        <input class="search-box" type="text" [(ngModel)]="pokemonId" (change)="search(pokemonId.toLowerCase())" placeholder="Pokemon Id">
+        <button class="next-button" (click)="searchNext(+pokemonId + 1)">next</button>
+    </div>
+    <div class = "info-container" *ngIf="response">
+        <!-- <div class="pokeball"></div> -->
+        <img class="pokedex-img" src={{img}} alt="">
+        <p class="pokedex-text">Id: {{getId()}}</p>
+        <p class="pokedex-text">Name: {{getName()}}</p>
+        <p class="pokedex-text">Type: {{getType()}}</p>
+    </div>
 </div>
